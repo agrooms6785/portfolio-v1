@@ -27,6 +27,14 @@ nav {
   z-index: 10;
 }
 
+header {
+  margin-top: 50px;
+}
+
+p {
+  text-align: left;
+}
+
 .box {
   display: inline-block;
   border: solid 1px black;
