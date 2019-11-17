@@ -9,25 +9,35 @@
   <title>Document</title>
 </head>
 <body>
-    <nav role='navigation'>Nav</nav>
-    <main role='main'>
-      <header>
-        Portfolio
-      </header>
-      <p class='subhed'>
-        Some info on how to navigate portfolio tiles
-        </p>
-        <section class='box'>
-          <img src="https://via.placeholder.com/165" alt="placeholder for porfolio tile1">
-          </section>
-        <section class='box'>
-          <img src="https://via.placeholder.com/165" alt="placeholder for porfolio tile2">
-        </section>
-    </main>
-    <footer role='content-info'>
+  <nav class='navbar' role='navigation'>
+    <ul class='menu'>
+      <li><a href='index.html'>home</a></li>
+      <li><a href='aboutme.html'>about me</a></li>
+      <li><a>portfolio</a></li>
+      <li><a href='mailto:amandagrooms@gmail.com'>email</a></li>
+  </ul>
+</nav>
+  <main class='container portfolio-section-container' role='main'>
+    <header class='page-header'>
+    Portfolio
+    </header>
+      <section class='tiles-container'>
+        <article class='portfolio-box box'>
+          <img src='https://i.imgur.com/VTcBP5V.png' alt='screenshot of wine quiz' class='portfolio-screenshot' id='wine-quiz-screenshot'>
+          <p><a href='https://github.com/agrooms6785/wine-quiz' target='_blank'>GitHub repository</a><p/>
+          <p><a href='https://agrooms6785.github.io/wine-quiz/' target='_blank'>GitHub Pages</a></p>
+        </article>
+      <article class='portfolio-box box'>
+        <img src='https://i.imgur.com/dN1J0kC.png' alt='placeholder for porfolio tile2'>
+        <p><a href='#' target='_blank'>GitHub repository</a><p/>
+        <p><a href='#' target='_blank'>GitHub Pages</a></p>
+      </article>
+    </section>
+  </main>
+    <footer class='foot' role='content-info'>
       <ul>
-        <li <a href="#">GitHub</a></li>
-        <li <a href="#">LinkedIn</a></li>
+        <li><a href='https://github.com/agrooms6785' target='_blank'><img src='github.svg' alt='github icon made by freepik on flaticon.com' id='github-icon'></a></li>
+        <li><a href='https://www.linkedin.com/in/amandafgrooms/' target='_blank'><img src='linkedin.svg' alt='linkedin icon made by freepik on flaticon.com' id='linkedin-icon'</a></li>
       </ul>
     </footer>
 </body>
