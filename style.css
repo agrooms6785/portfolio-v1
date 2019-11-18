@@ -120,10 +120,16 @@ footer {
 .portfolio-box {
   display: flex;
   justify-content: center;
+  /* flex: 1 1 0; */
+  min-height: 200px;
 }
 
 .portfolio-box img {
   max-width: 100%;
+}
+
+.portfolio-box p {
+  font-size: 1.4vh;
 }
 
 .tiles-container {
@@ -134,9 +140,13 @@ footer {
   flex: 1 1 0px;
 }
 
-@media only screen and (min-width: 780px) {
-  .box {
-    margin: 60px 60px 30px 60px;
+@media only screen and (min-width: 770px) {
+  .about-me-box {
+    margin: 8%
+  }
+
+  .portfolio-box {
+    margin: 2%;
   }
 
   .home-box {
@@ -148,29 +158,61 @@ footer {
     max-width: 100%;
   }
 
-  .about-me-container {
-    display: 
+  .about-me-container,
+  .portfolio-section-container {
+    display: flex;
+    flex-direction: row;
   }
 
   header {
-    margin-top: 75px;
+    margin: auto;
+  }
+
+  .about-vl {
+    border-left: 1px solid black;
+    height: 300px;
+    position: absolute;
+    left: 20%;
+    margin-left: -35px;
+    top: 200px;
+  }
+
+  .portfolio-vl {
+    border-left: 1px solid black;
+    height: 380px;
+    position: absolute;
+    left: 20%;
+    margin-left: -35px;
+    top: 100px;
+  }
+
+  .about-me-box {
+    border: none;
   }
 
   .page-header {
+    padding: 5%;
     font-size: 22px;
   }
 
   .tiles-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
-    flex: 1 1 0px;
+    flex: 1 1 auto;
+    margin-top: 40px;
+    padding: 50px 20px;
+  }
+
+  .portfolio-box p {
+    font-size: 1.2vh;
   }
 
   footer {
     background-color: white;
     position: relative;
+    padding: 10% 5px
   }
 }
 
@@ -186,10 +228,6 @@ footer {
 
   .container {
     margin: auto;
-  }
-
-  header {
-    margin-top: 75px;
   }
 
   .page-header {
@@ -220,4 +258,7 @@ footer {
     background-color: white;
     position: relative;
   }
+
+  .portfolio-vl {
+    top: 125px;
 }
