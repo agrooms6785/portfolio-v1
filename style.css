@@ -62,6 +62,10 @@ a:hover {
   display: none;
 }
 
+.menu-open .menu {
+  display: block;
+}
+
 .menu-open {
   background-color: #f49ecc;
   height: auto;
