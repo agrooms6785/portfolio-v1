@@ -116,8 +116,18 @@ a:hover {
   flex: 2 0 auto
 }
 
+.portfolio-box a {
+  color: #001430;
+  font-size: 14px;
+  font-weight: 800;
+}
+
 .portfolio-box p {
   font-size: 16px;
+}
+
+.portfolio-box a:hover {
+  color: #f49ecc
 }
 
 .my-name {

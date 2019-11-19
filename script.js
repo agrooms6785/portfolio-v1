@@ -2,6 +2,7 @@
 'use strict'
 
 // this function will create an animation that loads before the home page is viewable.
+//WILL ADD THIS FEATURE ON LATER VERSIONS
 function runPreloadAnimation() {
     console.log('`runPreloadAnimation` ran')
     if ($(window).width() < 765) {
