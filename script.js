@@ -1,8 +1,6 @@
 //this is my local JS file
 'use strict'
 
-// let screenSize = $(window.width())
-
 // this function will create an animation that loads before the home page is viewable.
 function runPreloadAnimation() {
     console.log('`runPreloadAnimation` ran')
@@ -18,13 +16,9 @@ function runPreloadAnimation() {
 function handleBurgerMenu() {
     console.log('`handleBurgerMenu` ran')
     $('.hamburger').on('click', function(event) {
-    event.preventDefault()
-    $('.navbar').addClass('menu-open')
-    $('.menu').slideToggle()
+    $('.navbar').toggleClass('menu-open')
   })
 }
-
-
 
 // callback function
 function loadAnimations() {

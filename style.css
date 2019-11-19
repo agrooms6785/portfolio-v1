@@ -75,6 +75,8 @@ a:hover {
 }
 
 .menu-open a {
+  display: block;
+  text-align: center;
   color: #001430
 }
 
