@@ -50,7 +50,7 @@ a:hover {
 
 .hamburger {
   color: #fff7f3;
-  float: right;
+  float: left;
   padding-top: 8px
 }
 
@@ -60,6 +60,26 @@ a:hover {
 
 .menu {
   display: none;
+}
+
+.menu-open {
+  background-color: #f49ecc;
+  height: auto;
+  padding-top: 20px;
+}
+
+.menu-open ul {
+  list-style-type: none;
+  width: 100%;
+  /* z-index: 10 */
+}
+
+.menu-open a {
+  color: #001430
+}
+
+.menu-open a:hover {
+  background-color: #fff7f3
 }
 
 .container {
