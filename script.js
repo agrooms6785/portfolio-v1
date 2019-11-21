@@ -15,7 +15,7 @@ function runPreloadAnimation() {
 
 // this function will handle the slide out menu when the burger icon is clicked
 function handleBurgerMenu() {
-    console.log('`handleBurgerMenu` ran')
+    // console.log('`handleBurgerMenu` ran')
     $('.hamburger').on('click', function(event) {
     $('.navbar').toggleClass('menu-open')
   })
@@ -23,7 +23,7 @@ function handleBurgerMenu() {
 
 // callback function
 function loadAnimations() {
-  runPreloadAnimation()
+  // runPreloadAnimation()
   handleBurgerMenu()
 }
 

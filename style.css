@@ -42,16 +42,19 @@ a:hover {
   left: 0;
   right: 0;
   width: 100%;
-  height: 2.5rem;
+  height: 3.5rem;
   background-color: #373d20;
   color: #ffede1;
   z-index: 10;
+  padding-left: 5px;
 }
 
 .hamburger {
   color: #fff7f3;
-  float: left;
-  padding-top: 8px
+  /* float: left; */
+  text-align: left;
+  padding-top: 15px
+
 }
 
 .hamburger:hover {
@@ -69,7 +72,8 @@ a:hover {
 .menu-open {
   background-color: #f49ecc;
   height: auto;
-  padding-top: 20px;
+  /* padding-top: 20px; */
+  padding-bottom: 20px;
 }
 
 .menu-open ul {
@@ -126,6 +130,11 @@ a:hover {
   font-size: 16px;
 }
 
+.portfolio-box .tech-used {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .portfolio-box a:hover {
   color: #f49ecc
 }
@@ -162,7 +171,8 @@ footer li {
 }
 
 #github-icon,
-#linkedin-icon {
+#linkedin-icon,
+#mail-icon {
   max-height: 1.8rem;
 }
 
@@ -181,6 +191,10 @@ footer li {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+}
+
+#pennyhead {
+  max-width: 150px;
 }
 
 @media only screen and (min-width: 380px) {
@@ -251,7 +265,7 @@ footer li {
     color: #f49ecc
   }
 
-  /* .about-me-container, */
+  .about-me-container,
   .portfolio-section-container {
     display: flex;
     flex-direction: row;
@@ -260,7 +274,7 @@ footer li {
   }
 
   .page-header {
-    padding: 3%;
+    padding: 4%;
     font-size: 24px;
     flex-grow: 0;
     /* border: solid pink; */
@@ -304,29 +318,6 @@ footer li {
     font-size: 4vw;
   }
 
-  /* .about-vl {
-    border-left: 1px solid black;
-    height: 300px;
-    position: absolute;
-    left: 20%;
-    margin-left: -35px;
-    top: 200px;
-  }
-
-  .portfolio-vl {
-    border-left: 1px solid black;
-    height: 380px;
-    position: absolute;
-    left: 20%;
-    margin-left: -35px;
-    top: 100px;
-  } */
-
-  /* .about-me-box {
-    border: none;
-  } */
-}
-
 @media only screen and (min-width: 1025px) {
   .home-box {
     margin-top: 100px;
@@ -346,9 +337,9 @@ footer li {
   .tiles-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-content: center;
-    padding: 0;
+    padding: 10%;
     flex: 1 1 0;
   }
 }
